@@ -1,0 +1,320 @@
+/* =============== SET UP STYLES =============== */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+
+/* =============== GENERAL STYLES =============== */
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  /* font-size: 1.6rem; */
+  background-color: #14171f;
+}
+
+h1,
+h2,
+h3,
+button,
+.preFooterNav {
+  font-family: 'Italiana', serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.55rem;
+  margin-bottom: 6px;
+}
+
+p {
+  line-height: 1.45;
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 110px 50px;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.floatItemL {
+  float: left;
+}
+
+/* ---------- button links ---------- */
+
+.btn {
+  font-family: 'Italiana', serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.btn.readMore {
+  padding: 8px 20px;
+  border: #faba63 solid 2px;
+}
+
+.btn.readMore:hover {
+  background-color: #faba63
+}
+
+
+/* =============== HEADER STYLES =============== */
+header {
+  background: #201e1f url(./../assets/headerBackground.jpg) center center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+header .wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.topNav a {
+  color: #faba63;
+}
+
+.topNav li {
+  margin: 23px 25px;
+  float: left;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 8rem;
+  padding-top: calc(42vh - (374px / 2));
+  padding-left: 18%;
+}
+
+.h1TxtSpan {
+  text-align: right;
+  display: block;
+}
+
+.txtAroContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.txtAro,
+.txtRa {
+  line-height: .6;
+}
+
+.txtJewelers {
+  line-height: 2;
+}
+
+.txtAro {
+  position: relative;
+  right: 50px;
+}
+
+.txtAro::before {
+  content: '';
+  width: 45px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+}
+
+.txtAro::after {
+  content: '';
+  width: 45px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+}
+
+.txtJewelers {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.25rem;
+  text-transform: none;
+  color: #faba63;
+  font-weight: 300;
+}
+
+.social {
+  float: right;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+
+.social li {
+  padding: 5px 25px 5px 5px;
+}
+
+/* =============== HAND-CRAFTED STYLES =============== */
+
+.handCraftedImg {
+  width: calc(30% - 50px);
+  margin-right: 50px;
+  padding-top: 11px;
+}
+
+.handCraftedTxt {
+  width: 70%;
+}
+
+/* =============== LATEST COLLECTION STYLES =============== */
+
+.collection {
+  background-color: #201e1f;
+}
+
+.collection h2 {
+  text-align: center;
+}
+
+.collectionItem {
+  width: calc((100% / 3) - 40px);
+  margin: 20px;
+}
+/* =============== OTHER PAGES LINKS STYLES =============== */
+
+.otherPagesItem {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.otherPagesItem i {
+  display: block;
+  color: #faba63;
+  font-size: 2.75rem;
+  padding-bottom: 15px;
+}
+
+/* =============== BLOG STYLES =============== */
+
+section.blog {
+  padding: 0;
+}
+
+.blog {
+  background-color: #201e1f;
+}
+
+.blogTxt,
+.blogImg {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.blogImg img {
+  display: block;
+}
+
+.blogTxt1 {
+  padding: 10% 70px 0 50px;
+}
+
+.blogTxt2 {
+  padding: 10% 50px 0 70px;
+}
+
+/* =============== PRE-FOOTER & FOOTER STYLES =============== */
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.preFooter p,
+footer p {
+  padding-bottom: .1rem;
+}
+
+.preFooterNav {
+  width: 10%;
+}
+
+.newsletter {
+  width: 60%;
+  text-align: center;
+}
+
+input[type=email],
+button {
+  height: 50px;
+}
+
+input[type=email] {
+  width: 480px;
+  border: none;
+}
+
+button {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  size: 50px;
+}
+
+.contact {
+  width: 30%;
+  text-align: right;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* =============== FOR SPECIFICITY REASONS =============== */
+.marginR0 {
+  margin-right: 0;
+}
+
+.marginL0 {
+  margin-left: 0;
+}
