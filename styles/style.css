@@ -66,7 +66,7 @@ a {
 }
 
 section {
-  padding: 110px 3.5%;
+  padding: 110px 4%;
 }
 
 .wrapper {
@@ -133,7 +133,7 @@ input[type="checkbox"] {
 }
 
 .topNav li:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .topNav li:hover a {
@@ -144,7 +144,7 @@ h1 {
   position: relative;
   display: inline-block;
   font-size: 8rem;
-  padding-top: calc(42vh - (374px / 2));
+  padding-top: 20%;
   padding-left: 18%;
 }
 
@@ -248,8 +248,8 @@ h1 {
 }
 
 .collectionItem {
-  width: calc((100% / 3) - 27px);
-  margin: 0 20px;
+  width: calc((100% / 3) - 2.7%);
+  margin: 0 2%;
 }
 
 /* =============== OTHER PAGES LINKS STYLES =============== */
@@ -266,14 +266,14 @@ section.otherPages {
 }
 
 .otherPagesItem:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .otherPagesItem i {
   display: block;
   color: #faba63;
   font-size: 2.75rem;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 /* =============== BLOG STYLES =============== */
@@ -323,12 +323,12 @@ h3 {
 }
 
 .preFooterNav li {
-  transition: ease-in 0.2s;
-  transition-property: color, transform;
+  padding-bottom: 5px;
 }
 
-.preFooterNav li:hover {
-  transform: scale(1.2);
+footer a,
+.preFooter a {
+  transition: color ease-in 0.2s;
 }
 
 footer a:hover,
@@ -350,10 +350,6 @@ footer a:hover,
 .preFooter p,
 footer p {
   padding-bottom: .1rem;
-}
-
-.preFooterNav li {
-  margin-bottom: 5px;
 }
 
 form {
@@ -406,7 +402,7 @@ footer {
   margin-left: 0;
 }
 
-/* =============== RESPONSIVE STYLES =============== */
+/* =============== MEDIA QUERIES =============== */
 
 @media (max-width: 1350px) {
   h2 {
@@ -493,7 +489,7 @@ footer {
   
   .preFooterNav li {
     display: inline-block;
-    margin: 0 5% 8%;
+    margin: 0 5% 10%;
   }
   
   .newsletter {
@@ -616,6 +612,7 @@ footer {
 
   h1 {
     font-size: 5.5rem;
+    padding-left: 20%;
   }
 
   .txtJewelers {
@@ -631,7 +628,7 @@ footer {
   }
 
   .collectionItem {
-    width: calc(50% - 20px);
+    width: calc(50% - 2%);
   }
 
   .otherPagesItem {
@@ -643,7 +640,118 @@ footer {
     font-size: 1.8rem;
   }
 
+  .blogTxt {
+    padding-top: 9%;
+    padding-bottom: 11%;
+  }
+
+  h1{
+     padding-top: 42%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .otherPagesItem i {
+    font-size: 2.5rem;
+  }
+
+  section.preFooter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact p,
+  footer p {
+    font-size: .8rem;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    background: url(./../assets/headerBackgroundMob.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  h1{
+    font-size: 3.5rem;
+    padding-top: 35vh;
+    margin-left: 20px;
+  }
+
+  .txtAro::before {
+    width: 30px;
+    left: -40px;
+  }
+
+  .txtAro::after {
+    width: 30px;
+    right: -40px;
+  }
+
+  .txtJewelers {
+    font-size: 1rem;
+  }
+
+  section.collection {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+
+  .collectionItem {
+    width: calc(50% - 2%); 
+  }
+
+  section.otherPages {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 441px) {
+  h1{
+    font-size: 3.1rem;
+  }
+
+  .txtAro::before {
+    width: 30px;
+    left: -40px;
+  }
+
+  .txtAro::after {
+    width: 30px;
+    right: -40px;
+  }
+
+  .txtJewelers {
+    font-size: .85rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .preFooterNav li {
+    margin: 0 3% 10%;
+  }
+}
+
+@media (max-width: 441px) {
+  .otherPagesItem .btn {
+    font-size: 1.5rem;
+  }
 }
 
 /* ------ FUTURE TO DO ----- */
 /* Get svg:hover color working
+Add social icons to overlay menu */
