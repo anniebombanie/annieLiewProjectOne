@@ -30,7 +30,6 @@ a {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  /* font-size: 1.6rem; */
   background-color: #14171f;
 }
 
@@ -91,10 +90,13 @@ section {
 .btn.readMore {
   padding: 8px 20px;
   border: #faba63 solid 2px;
+  transition: 0.2s ease-in;
+  transition-property: color, background-color;
 }
 
 .btn.readMore:hover {
-  background-color: #faba63
+  background-color: #faba63;
+  color: #14171f;
 }
 
 
@@ -118,6 +120,16 @@ header .wrapper {
 .topNav li {
   margin: 23px 25px;
   float: left;
+  transition: ease-in 0.2s;
+  transition-property: color, transform;
+}
+
+.topNav li:hover {
+  transform: scale(1.2);
+}
+
+.topNav li:hover a {
+  color: #fff;
 }
 
 h1 {
@@ -185,10 +197,18 @@ h1 {
   position: absolute;
   bottom: 40px;
   right: 0;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
-.social li {
-  padding: 5px 25px 5px 5px;
+.social li i {
+  margin: 10px 25px 10px 0;
+  transition: color .2s ease-in;
+}
+
+.social li:hover i {
+  color: #faba63;
+  cursor: pointer;
 }
 
 /* =============== HAND-CRAFTED STYLES =============== */
@@ -234,6 +254,11 @@ section.otherPages {
 .otherPagesItem {
   width: calc(100% / 3);
   text-align: center;
+  transition: transform ease-in 0.2s;
+}
+
+.otherPagesItem:hover {
+  transform: scale(1.2);
 }
 
 .otherPagesItem i {
@@ -260,13 +285,18 @@ section.blog {
 
 .blogTxt,
 .blogImg {
-  float: left;
   width: 50%;
   height: 100%;
 }
 
-.blogImg img {
-  display: block;
+.blogTxt1,
+.blogImg2 {
+  float: left;
+}
+
+.blogTxt2,
+.blogImg1 {
+  float: right;
 }
 
 .blogTxt {
@@ -284,10 +314,25 @@ h3 {
   width: 23%;
 }
 
+.preFooterNav li {
+  transition: ease-in 0.2s;
+  transition-property: color, transform;
+}
+
+.preFooterNav li:hover {
+  transform: scale(1.2);
+}
+
+footer a:hover,
+.preFooter a:hover {
+  color: #faba63;
+}
+
+
 .newsletter {
   width: 50%;
   text-align: center;
-  margin: 10px 1% 0 0;
+  padding-right: 15px;
 }
 
 .contact {
@@ -319,16 +364,23 @@ button {
 }
 
 input[type=email] {
-  width: 78%;
+  width: 77%;
   color: #14171f;
   padding: 2% 5%;
 }
 
 button {
-  width: 22%;
+  width: 23%;
   color: #fff;
   background-color: #000;
   font-size: .9rem;
+  transition: 0.2s ease-in;
+  transition-property: color, background-color;
+}
+
+button:hover {
+  color: #14171f;
+  background-color: #faba63;
 }
 
 .pInLineBlock {
@@ -373,12 +425,20 @@ footer {
     font-size: .85rem;
   }
 
-  input[type=email] {
-    width: 70%;
+  .handCraftedImg {
+    width: calc(35% - 50px);
   }
 
-  .readMore {
-    font-size: 1.1rem;
+  .handCraftedTxt {
+    width: 65%;
+  }
+
+  input[type=email] {
+    width: 75%;
+  }
+
+  button {
+    width: 25%;
   }
 }
 
@@ -386,14 +446,119 @@ footer {
  .blogTxt1 {
     padding-top: 5%;
   }
+
+  .handCraftedImg {
+    width: calc(40% - 50px);
+  }
+
+  .handCraftedTxt {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1010px) {
-  .blogTxt1 {
-    padding-top: 3.5%;
+  .blogTxt,
+  .blogImg {
+    float: none;
+    width: 100%;
   }
 
-  .blogTxt2 {
+  .blogContainer {
+    height: auto;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .blogTxt {
     padding-top: 6%;
+    padding-bottom: 8%;
+  }
+
+  section.preFooter {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .preFooterNav {
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-transform: none;
+  }
+  
+  .preFooterNav li {
+    display: inline-block;
+    margin: 0 5% 8%;
+  }
+  
+  .newsletter {
+    width: 60%;
+    text-align: left;
+  }
+
+  .newsletter button {
+    text-align: center;
+  }
+
+  .contact {
+    width: 40%;
+  }
+}
+
+@media (max-width: 850px) {
+
+.social {
+  display: 
+}
+
+p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2.55rem;
+  }
+
+  .about div {
+    float: none;
+    clear: both;
+  }
+
+  .handCraftedImg,
+  .handCraftedTxt {
+    width: 100%;
+  }
+  
+  .handCraftedImg {
+    margin-bottom: 45px;
+  }
+  
+  .newsletter {
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+    margin-bottom: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Wrote margin L/R out to be very specfic and not overwrite previously defined styles */
+
+  input[type=email] {
+    width: 78%;
+  }
+
+  button {
+    width: 22%;
+  }
+
+  .contact {
+    width: 100%;
+    text-align: center;
   }
 }

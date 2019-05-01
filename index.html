@@ -58,10 +58,11 @@
     <!-- HAND CRAFTED STARTS -->
     <section class="about" id="about">
       <div class="wrapper clearfix">
-        <div class="floatItemL handCraftedImg">
+        <picture class="floatItemL handCraftedImg">
+          <source media="(max-width: 850px)" srcset="assets/handMakerMob.jpg">
           <img src="assets/handMaker.jpg"
             alt="close-up shot of hands comparing three different coloured rings above a jewelery box.">
-        </div>
+        </picture>
         <div class="floatItemL handCraftedTxt">
           <h2>hand crafted</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid sint accusantium eum mollitia
@@ -122,22 +123,22 @@
     <!-- BLOG START -->
     <section class="blog" id="blog">
       <div class="blogContainer clearfix">
+        <picture class="blogImg blogImg1">
+          <source media="(max-width: 1010px)" srcset="assets/modelNecklacesMob.jpg">
+          <img src="assets/modelNecklaces.jpg" alt="product shot of two necklaces around a woman's neck.">
+        </picture>
         <div class="blogTxt blogTxt1">
-           <h2>sustainable materials</h2>
+          <h2>sustainable materials</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt rerum labore accusamus cumque
             saepe vero repudiandae molestias et corporis accusantium molestiae, praesentium quae ab ea sunt animi
             architecto reiciendis.</p>
           <a href="" class="btn readMore">read more</a>
         </div>
-        <picture class="blogImg blogImg1">
-          <source media="(max-width: 1010px)" srcset="assets/modelNecklacesMob.jpg">
-          <img src="assets/modelNecklacesMob.jpg" alt="product shot of two necklaces around a woman's neck.">
-        </picture>
       </div>
       <div class="clearfix blogContainer">
-        <picture class="blogImg">
+        <picture class="blogImg blogImg2">
           <source media="(max-width: 1010px)" srcset="assets/handJewelryMob.jpg">
-          <img src="assets/handJewelryMob.jpg" alt="close up of hand wearing two rings and an elaborate watch.">
+          <img src="assets/handJewelry.jpg" alt="close up of hand wearing two rings and an elaborate watch.">
         </picture>
         <div class="blogTxt blogTxt2">
           <h2>mix & match</h2>
@@ -174,7 +175,7 @@
       </div>
       <div class="contact floatItemL" id="contact">
         <h3>contact</h3>
-        <p><a href="mailto:info@email.com" class="email">info@email.com</a> | <a href="tel:1234567890" aria-label="1 2 3. 4 5 6. 7 8 9 0.">123 - 456 - 7890</a></p><!-- fullstop in aria label tells screen reader to pause-->
+        <p><a href="mailto:info@email.com">info@email.com</a> | <a href="tel:1234567890" aria-label="1 2 3. 4 5 6. 7 8 9 0.">123 - 456 - 7890</a></p><!-- fullstop in aria label tells screen reader to pause-->
         <p>123 Some Road, Toronto, ON</p>
         <p>A5A 5A5, Canada</p>
       </div>
@@ -184,7 +185,7 @@
   <!-- FOOTER STARTS -->
   <footer>
     <div class="wrapper clearfix">
-      <p>Copyright &copy; 2019 HackerYou</p>
+      <p>Copyright &copy; 2019 <a href="www.hackeryou.com" target="_blank">HackerYou</a></p>
     </div>
   </footer>
 
