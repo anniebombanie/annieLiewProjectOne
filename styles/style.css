@@ -67,7 +67,7 @@ a {
 }
 
 section {
-  padding: 110px 50px;
+  padding: 110px 3.5%;
 }
 
 .wrapper {
@@ -209,14 +209,21 @@ h1 {
   background-color: #201e1f;
 }
 
+.collectionContainer {
+  width: 100%;
+}
+
 .collection h2 {
   text-align: center;
   margin-bottom: 90px;
 }
 
 .collectionItem {
-  width: calc((100% / 3) - 40px);
-  margin: 20px;
+  width: calc((100% / 3) - 14px);
+}
+
+.collectionItem:nth-child(2){
+  margin: 0 20px;
 }
 /* =============== OTHER PAGES LINKS STYLES =============== */
 
@@ -238,6 +245,11 @@ section.blog {
   padding: 0;
 }
 
+/* Solves issue of text pushing down second blog row - credit: jonwong.dev */
+.blogContainer {
+  height: 37.5vw;
+}
+
 .blog {
   background-color: #201e1f;
 }
@@ -253,12 +265,8 @@ section.blog {
   display: block;
 }
 
-.blogTxt1 {
-  padding: 10% 70px 0 50px;
-}
-
-.blogTxt2 {
-  padding: 10% 50px 0 70px;
+.blogTxt {
+  padding: 9% 3.5% 0;
 }
 
 /* =============== PRE-FOOTER & FOOTER STYLES =============== */
@@ -284,35 +292,34 @@ footer p {
 .newsletter {
   width: 60%;
   text-align: center;
+  margin: 0 auto;
 }
 
+/* -- make form into blocks and float to remove ghost spacing */
 form {
-  float: left;
+  float: right;
   margin-top: 10px;
+  width: 90%;
+  text-align: center;
 }
 
 input[type=email],
 button {
   display: block;
   height: 50px;
+  border: none;
 }
 
 input[type=email] {
-  width: 480px;
-  border: none;
+  width: 70%;
   padding: 10px 33px;
   color: #14171f;
 }
 
 button {
-  display: block;
   color: #fff;
   background-color: #000;
-  border: none;
-  height: 50px;
   font-size: .9rem;
-  margin: 0;
-  padding: 0;
   width: 160px;
 }
 
@@ -336,3 +343,44 @@ footer {
 .marginL0 {
   margin-left: 0;
 }
+
+/* =============== RESPONSIVE STYLES =============== */
+
+@media (max-width: 1350px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+}
+
+@media (max-width: 1189px) {
+   h2 {
+    font-size: 2rem;
+  }
+
+  .blogTxt {
+    padding-top: 7%;
+  }
+
+  p {
+    font-size: .85rem;
+  }
+
+  input[type=email] {
+    width: 70%;
+  }
+}
+
+/* @media (max-width: 1061px) {
+  input[type=email],
+  button {
+    width: 90%;
+  } 
+}*/
+
+/* @media (max-width: 1055px) {
+  input[type=email],
+  button {
+    width: 90%;
+  }
+} */
