@@ -16,9 +16,11 @@
 
 <body>
   <!-- HEADER STARTS -->
-  <header id="home">
-    <div class="wrapper clearfix">
+  <header class="home" id="home">
+    <div class="clearfix">
       <nav class="topNav">
+        <label for="hamburger"><img src="assets/hamburger-menu.svg" aria-hidden="true"></label>
+        <input type="checkbox" id="hamburger" aria-hidden="true" />
         <ul class="clearfix">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -51,7 +53,7 @@
                 aria-hidden="true"></i></a>
           </li>
         </ul>
-    </div>
+    </div> <!-- /.social -->
   </header>
 
   <main>
@@ -71,9 +73,9 @@
             vitae porro quaerat numquam suscipit dignissimos accusamus cupiditate quo, iusto aliquid tenetur excepturi. Culpa suscipit debitis dolor, sed atque expedita vero
             repellendus minus voluptatem veritatis libero unde cupiditate ipsa tenetur dignissimos alias itaque ad
             ratione illo obcaecati provident repudiandae.</p>
-          <a href="" class="btn readMore">read more</a>
+          <div><a href="" class="btn readMore">read more</a></div>
         </div>
-      </div>
+      </div> <!-- /.wrapper -->
     </section>
 
     <!-- LATEST COLLECTION STARTS -->
@@ -91,7 +93,7 @@
             <img src="assets/collectionEarrings.jpg" alt="close up of various earrings.">
           </div>
         </div>
-      </div>
+      </div> <!-- /.wrapper -->
     </section>
 
     <!-- OTHER PAGES LINKS START -->
@@ -114,10 +116,10 @@
             <a href="" aria-label="go to collaborators page.">
               <i class="far fa-handshake" aria-hidden="true"></i>
               <span class="btn">collaborators</span>
-          </a>
+            </a>
           </div>
         </nav>
-      </div>
+      </div> <!-- /.wrapper -->
     </section>
 
     <!-- BLOG START -->
@@ -129,12 +131,10 @@
         </picture>
         <div class="blogTxt blogTxt1">
           <h2>sustainable materials</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt rerum labore accusamus cumque
-            saepe vero repudiandae molestias et corporis accusantium molestiae, praesentium quae ab ea sunt animi
-            architecto reiciendis.</p>
-          <a href="" class="btn readMore">read more</a>
+          <p>Suspendisse imperdiet, nisl sit amet bibendum sodales, risus neque congue nunc, sed semper magna eros id diam. Quisque nec finibus elit, in laoreet neque. Curabitur et velit sit amet augue convallis interdum in at velit.</p>
+            <div><a href="" class="btn readMore">read more</a></div>
         </div>
-      </div>
+      </div> <!-- /.blogContainer -->
       <div class="clearfix blogContainer">
         <picture class="blogImg blogImg2">
           <source media="(max-width: 1010px)" srcset="assets/handJewelryMob.jpg">
@@ -145,9 +145,9 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt rerum labore accusamus cumque
             saepe vero repudiandae molestias et corporis accusantium molestiae, praesentium quae ab ea sunt animi
             architecto reiciendis.</p>
-          <a href="" class="btn readMore">read more</a>
+          <div><a href="" class="btn readMore">read more</a></div>
         </div>
-      </div>
+      </div> <!-- /.blogContainer -->
     </section>
   </main>
 
@@ -179,7 +179,7 @@
         <p>123 Some Road, Toronto, ON</p>
         <p>A5A 5A5, Canada</p>
       </div>
-    </div>
+    </div> <!-- /.wrapper -->
   </section>
 
   <!-- FOOTER STARTS -->

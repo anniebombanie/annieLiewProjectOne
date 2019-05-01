@@ -105,12 +105,20 @@ header {
   background: #201e1f url(./../assets/headerBackground.jpg) center center no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding: 0 20px;
 }
 
 header .wrapper {
   position: relative;
   height: 100vh;
+}
+
+.topNav label,
+input[type="checkbox"] {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  width: 49px;
+  display: none;
 }
 
 .topNav a {
@@ -328,7 +336,6 @@ footer a:hover,
   color: #faba63;
 }
 
-
 .newsletter {
   width: 50%;
   text-align: center;
@@ -349,7 +356,6 @@ footer p {
   margin-bottom: 5px;
 }
 
-/* -- make form into blocks and float to remove ghost spacing */
 form {
   width: 100%;
   text-align: center;
@@ -358,7 +364,7 @@ form {
 
 input[type=email],
 button {
-  display: block;
+  display: block; /* make form elements into blocks and float to remove ghost spacing */
   height: 50px;
   border: none;
 }
@@ -381,10 +387,6 @@ button {
 button:hover {
   color: #14171f;
   background-color: #faba63;
-}
-
-.pInLineBlock {
-  display: inline;
 }
 
 footer {
@@ -443,7 +445,7 @@ footer {
 }
 
 @media (max-width: 1056px) {
- .blogTxt1 {
+  .blogTxt1 {
     padding-top: 5%;
   }
 
@@ -509,17 +511,26 @@ footer {
 }
 
 @media (max-width: 850px) {
+  header {
+    background: #201e1f url(./../assets/headerBackground.jpg) 60% center no-repeat;
+    background-size: cover;
+  }
 
-.social {
-  display: 
-}
-
-p {
+  p {
     font-size: 1rem;
   }
 
   h2 {
     font-size: 2.55rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .handCraftedTxt > div,
+  .blogTxt > div {
+    text-align: center;
   }
 
   .about div {
@@ -547,7 +558,7 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-  /* Wrote margin L/R out to be very specfic and not overwrite previously defined styles */
+  /* Wrote margin L/R out to be very specfic + not overwrite previously defined styles */
 
   input[type=email] {
     width: 78%;
@@ -562,3 +573,77 @@ p {
     text-align: center;
   }
 }
+
+@media (max-width: 635px) {
+  
+  .topNav {
+    position: relative;
+    width: 100%;
+  }
+
+  .topNav label {
+		display: block; /* show hamburger */
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .topNav ul {
+    margin: auto;
+    padding: 25vh 0 0 0;
+    background: rgba(32, 30, 31, .98);
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    transform: scaleY(0);
+    transition: transform ease-in .2s;
+  }
+
+  .topNav li {
+    float: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  input:checked ~ ul {
+    transform: scaleY(1);
+  }
+
+  .social {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  .txtJewelers {
+    font-size: 1.6rem;
+  }
+
+  .collectionContainer > div:nth-child(3) {
+    display: none;
+  }
+
+  .collectionContainer > div:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .collectionItem {
+    width: calc(50% - 20px);
+  }
+
+  .otherPagesItem {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .otherPagesItem .btn {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* ------ FUTURE TO DO ----- */
+/* Get svg:hover color working
