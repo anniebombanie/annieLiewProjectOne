@@ -80,13 +80,13 @@
       <div class="wrapper clearfix">
         <h2>latest collection</h2>
         <div class="collectionContainer">
-          <div class="floatItemL collectionItem">
+          <div class="floatItemL collectionItem marginL0">
             <img src="assets/collectionNecklaces.jpg" alt="close up of various necklaces.">
           </div>
           <div class="floatItemL collectionItem">
               <img src="assets/collectionRings.jpg" alt="close up of a couple of rings.">
           </div>
-          <div class="floatItemL collectionItem">
+          <div class="floatItemL collectionItem marginR0">
             <img src="assets/collectionEarrings.jpg" alt="close up of various earrings.">
           </div>
         </div>
@@ -94,9 +94,9 @@
     </section>
 
     <!-- OTHER PAGES LINKS START -->
-    <section>
+    <section class="otherPages">
       <div class="wrapper">
-        <nav class="otherPages clearfix">
+        <nav class="clearfix">
           <div class="otherPagesItem floatItemL">
             <a href="" aria-label="go to catalogue page.">
               <i class="far fa-images" aria-hidden="true"></i>
@@ -121,22 +121,24 @@
 
     <!-- BLOG START -->
     <section class="blog" id="blog">
-      <div class="clearfix blogContainer">
-        <div class="blogTxt">
+      <div class="blogContainer clearfix">
+        <div class="blogTxt blogTxt1">
            <h2>sustainable materials</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt rerum labore accusamus cumque
             saepe vero repudiandae molestias et corporis accusantium molestiae, praesentium quae ab ea sunt animi
             architecto reiciendis.</p>
           <a href="" class="btn readMore">read more</a>
         </div>
-        <div class="blogImg blogImg1">
+        <picture class="blogImg blogImg1">
+          <source media="(max-width: 1010px)" srcset="assets/modelNecklacesMob.jpg">
           <img src="assets/modelNecklaces.jpg" alt="product shot of two necklaces around a woman's neck.">
-        </div>
+        </picture>
       </div>
       <div class="clearfix blogContainer">
-        <div class="blogImg">
+        <picture class="blogImg">
+          <source media="(max-width: 1010px)" srcset="assets/handJewelryMob.jpg">
           <img src="assets/handJewelry.jpg" alt="close up of hand wearing two rings and an elaborate watch.">
-        </div>
+        </picture>
         <div class="blogTxt blogTxt2">
           <h2>mix & match</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt rerum labore accusamus cumque
@@ -172,7 +174,7 @@
       </div>
       <div class="contact floatItemL" id="contact">
         <h3>contact</h3>
-        <p><a href="mailto:info@email.com">info@email.com</a> | 123 - 456 - 7890</p>
+        <p><a href="mailto:info@email.com" class="email">info@email.com</a> | <a href="tel:1234567890" aria-label="1 2 3. 4 5 6. 7 8 9 0.">123 - 456 - 7890</a></p><!-- fullstop in aria label tells screen reader to pause-->
         <p>123 Some Road, Toronto, ON</p>
         <p>A5A 5A5, Canada</p>
       </div>
